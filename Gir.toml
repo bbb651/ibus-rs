@@ -1,0 +1,83 @@
+[options]
+library = "IBus"
+version = "1.0"
+min_cfg_version = "1.0"
+target_path = "."
+girs_directories = [".", "gir-files"]
+work_mode = "normal"
+single_version_file = true
+generate_safety_asserts = true
+deprecate_by_min_version = true
+generate_builder = true
+
+external_libraries = ["GLib", "GObject", "Gio"]
+
+generate = [
+    "IBus.*",
+    "IBus.Attribute",
+    "IBus.AttrList",
+    "IBus.AttrType",
+    "IBus.AttrUnderline",
+    "IBus.Bus",
+    "IBus.BusGlobalBindingType",
+    "IBus.BusNameFlag",
+    "IBus.BusRequestNameReply",
+    "IBus.BusStartServiceByNameReply",
+    "IBus.Capabilite",
+    "IBus.Component",
+    "IBus.Config",
+    "IBus.ConfigService",
+    "IBus.EmojiData",
+    "IBus.Engine",
+    "IBus.EngineDesc",
+    "IBus.EngineSimple",
+    "IBus.Error",
+    "IBus.ExtensionEvent",
+    "IBus.Factory",
+    "IBus.HotkeyProfile",
+    "IBus.InputContext",
+    "IBus.InputHints",
+    "IBus.InputPurpose",
+    "IBus.Keymap",
+    "IBus.LookupTable",
+    "IBus.ModifierType",
+    "IBus.Object",
+    "IBus.ObjectFlags",
+    "IBus.ObservedPath",
+    "IBus.Orientation",
+    "IBus.PanelService",
+    "IBus.PreeditFocusMode",
+    "IBus.Property",
+    "IBus.PropList",
+    "IBus.PropState",
+    "IBus.PropType",
+    "IBus.Proxy",
+    "IBus.Registry",
+    "IBus.Serializable",
+    "IBus.Service",
+    "IBus.Text",
+    "IBus.UnicodeBlock",
+    "IBus.UnicodeData",
+    "IBus.UnicodeDataLoadAsyncFinish",
+    "IBus.XEvent",
+    "IBus.XEventType",
+    "IBus.XML",
+    # "IBus.ProcessKeyEventData",
+    # "IBus.Rectangle",
+    # "IBus.ServiceClass",
+]
+
+manual = [
+    "Gio.AsyncInitable",
+    "Gio.AsyncReadyCallback",
+    "Gio.AsyncResult",
+    "Gio.Cancellable",
+    "Gio.DBusConnection",
+    "Gio.DBusInterface",
+    "Gio.DBusProxy",
+    "Gio.Initable",
+    "GLib.Error",
+    "GLib.Quark",
+    "GLib.GString",
+    "GLib.Variant",
+]
